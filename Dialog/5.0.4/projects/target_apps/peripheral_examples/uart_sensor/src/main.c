@@ -1,0 +1,79 @@
+/**
+ ****************************************************************************************
+ *
+ * @file main.c
+ *
+ * @brief UART example for DA14580/581 SDK
+ *
+ * Copyright (C) 2012. Dialog Semiconductor Ltd, unpublished work. This computer 
+ * program includes Confidential, Proprietary Information and is a Trade Secret of 
+ * Dialog Semiconductor Ltd.  All use, disclosure, and/or reproduction is prohibited 
+ * unless authorized in writing. All Rights Reserved.
+ *
+ * <bluetooth.support@diasemi.com> and contributors.
+ *
+ ****************************************************************************************
+ */
+#include <stdio.h>
+
+#include "global_io.h"
+#include "common_uart.h"
+#include "user_periph_setup.h"
+#include "m_drv_mc3630.h"
+
+extern int M_DRV_MC3630_Init(void);
+
+void system_init(void);
+void uart_test(void);
+
+/**
+ ****************************************************************************************
+ * @brief  Main routine of the UART example
+ * 
+ ****************************************************************************************
+ */
+int main (void)
+{
+    int32_t retcode;
+		system_init();
+    periph_init();
+    uart_test();
+		//retcode = M_DRV_MC3630_Init();
+		while(1);
+}
+/**
+ ****************************************************************************************
+ * @brief System Initiialization 
+ *
+ * 
+ ****************************************************************************************
+ */
+
+void system_init(void)
+{
+    SetWord16(CLK_AMBA_REG, 0x00);                 // set clocks (hclk and pclk ) 16MHz
+    SetWord16(SET_FREEZE_REG,FRZ_WDOG);            // stop watch dog    
+    SetBits16(SYS_CTRL_REG,PAD_LATCH_EN,1);        // open pads
+    SetBits16(SYS_CTRL_REG,DEBUGGER_ENABLE,1);     // open debugger
+    SetBits16(PMU_CTRL_REG, PERIPH_SLEEP,0);       // exit peripheral power down
+}
+/**
+ ****************************************************************************************
+ * @brief Uart  test fucntion
+ *
+ * 
+ ****************************************************************************************
+ */
+void uart_test(void)
+{  
+    printf_string("\n\r\n\r*************");
+    printf_string("\n\r* UART TEST *\n\r");
+    printf_string("*************\n\r");
+    printf_string("\n\rHello World! == UART printf_string()\n\r");
+    printf_string("\n\rUART print_hword() = 0x");
+    print_hword(0xAABB);
+    printf_string("\n\rUART print_word() = 0x");
+    print_word(0x11223344);
+    printf_string("\n\rEnd of test\n\r");
+		printf_3x_data(10,20,-30);
+}

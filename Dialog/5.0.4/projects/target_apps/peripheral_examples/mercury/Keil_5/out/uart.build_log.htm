@@ -1,0 +1,409 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Hao Hua, zGlue, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DARMCM1.DLL V1.14.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.20.0
+Dialog DLL:      TARMCM1.DLL V1.10.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Hao Hua\Documents\Projects\Dialog\DA1458x_SDK\5.0.4\projects\target_apps\peripheral_examples\mercury\Keil_5\uart.uvprojx
+Project File Date:  09/09/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'UART_SENSOR'
+compiling m_drv_mc3630.c...
+mcube\m_drv_mc3630.c(206): error:  #20: identifier "E_M_DRV_MC3630_RANGE" is undefined
+  static E_M_DRV_MC3630_RANGE s_eRange = M_DRV_MC3630_CFG_RANGE;
+mcube\m_drv_mc3630.c(206): error:  #20: identifier "E_M_DRV_MC3630_RANGE_8G" is undefined
+  static E_M_DRV_MC3630_RANGE s_eRange = 
+_DRV_MC3630_CFG_RANGE;
+mcube\m_drv_mc3630.c(207): error:  #20: identifier "E_M_DRV_MC3630_RESOLUTION" is undefined
+  static E_M_DRV_MC3630_RESOLUTION s_eResolution = M_DRV_MC3630_CFG_RESOLUTION;
+mcube\m_drv_mc3630.c(207): error:  #20: identifier "E_M_DRV_MC3630_RESOLUTION_12BIT" is undefined
+  static E_M_DRV_MC3630_RESOLUTION s_eResolution = 
+_DRV_MC3630_CFG_RESOLUTION;
+mcube\m_drv_mc3630.c(208): error:  #20: identifier "E_M_DRV_MC3630_CWAKE_SR" is undefined
+  static E_M_DRV_MC3630_CWAKE_SR s_eSR_CWAKE = M_DRV_MC3630_CFG_SAMPLE_RATE_CWAKE_DEFAULT;
+mcube\m_drv_mc3630.c(208): error:  #20: identifier "E_M_DRV_MC3630_CWAKE_SR_LP_54Hz" is undefined
+  static E_M_DRV_MC3630_CWAKE_SR s_eSR_CWAKE = 
+_DRV_MC3630_CFG_SAMPLE_RATE_CWAKE_DEFAULT;
+mcube\m_drv_mc3630.c(209): error:  #20: identifier "E_M_DRV_MC3630_SNIFF_SR" is undefined
+  static E_M_DRV_MC3630_SNIFF_SR s_eSR_SNIFF = M_DRV_MC3630_CFG_SAMPLE_RATE_SNIFF_DEFAULT;
+mcube\m_drv_mc3630.c(209): error:  #20: identifier "E_M_DRV_MC3630_SNIFF_SR_6Hz" is undefined
+  static E_M_DRV_MC3630_SNIFF_SR s_eSR_SNIFF = 
+_DRV_MC3630_CFG_SAMPLE_RATE_SNIFF_DEFAULT;
+mcube\m_drv_mc3630.c(210): error:  #20: identifier "E_M_DRV_MC3630_WAKE_GAIN" is undefined
+  static E_M_DRV_MC3630_WAKE_GAIN s_eGAIN_WAKE = M_DRV_MC3630_CFG_WAKE_GAIN_DEFAULT;
+mcube\m_drv_mc3630.c(210): error:  #20: identifier "E_M_DRV_MC3630_WAKE_GAIN_LOW" is undefined
+  static E_M_DRV_MC3630_WAKE_GAIN s_eGAIN_WAKE = 
+_DRV_MC3630_CFG_WAKE_GAIN_DEFAULT;
+mcube\m_drv_mc3630.c(211): error:  #20: identifier "E_M_DRV_MC3630_SNIFF_GAIN" is undefined
+  static E_M_DRV_MC3630_SNIFF_GAIN s_eGAIN_SNIFF =  M_DRV_MC3630_CFG_SNIFF_GAIN_DEFAULT;
+mcube\m_drv_mc3630.c(211): error:  #20: identifier "E_M_DRV_MC3630_SNIFF_GAIN_HIGH" is undefined
+  static E_M_DRV_MC3630_SNIFF_GAIN s_eGAIN_SNIFF =  
+_DRV_MC3630_CFG_SNIFF_GAIN_DEFAULT;
+mcube\m_drv_mc3630.c(238): warning:  #223-D: function "System_Deley" declared implicitly
+      System_Deley(dwMs);
+mcube\m_drv_mc3630.c(248): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(252): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_FEATURE_C_1, &_bRegIO_C, 1); //0x0D
+mcube\m_drv_mc3630.c(252): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_FEATURE_C_1, &_bRegIO_C, 1); //0x0D
+mcube\m_drv_mc3630.c(252): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_FEATURE_C_1, &_bRegIO_C, 1); //0x0D
+mcube\m_drv_mc3630.c(262): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_FEATURE_C_1, &_bRegIO_C, 1);
+mcube\m_drv_mc3630.c(262): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_FEATURE_C_1, &_bRegIO_C, 1);
+mcube\m_drv_mc3630.c(262): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_FEATURE_C_1, &_bRegIO_C, 1);
+mcube\m_drv_mc3630.c(264): error:  #20: identifier "M_DRV_MC3630_RETCODE_SUCCESS" is undefined
+      return(M_DRV_MC3630_RETCODE_SUCCESS);
+mcube\m_drv_mc3630.c(272): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s] SniffGain= 0x%02X", __func__, SniffGain);
+mcube\m_drv_mc3630.c(275): error:  #20: identifier "E_M_DRV_MC3630_SNIFF_GAIN_END" is undefined
+      if (SniffGain > E_M_DRV_MC3630_SNIFF_GAIN_END) {
+mcube\m_drv_mc3630.c(276): error:  #20: identifier "M_DRV_MC3630_RETCODE_ERROR_WRONG_ARGUMENT" is undefined
+          return(M_DRV_MC3630_RETCODE_ERROR_WRONG_ARGUMENT);
+mcube\m_drv_mc3630.c(278): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(278): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(278): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(279): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_DMX, _bRegAGain);
+mcube\m_drv_mc3630.c(282): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(282): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(282): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(286): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(286): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(286): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(287): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_DMY, _bRegAGain);
+mcube\m_drv_mc3630.c(289): error:  #20: identifier "M_DRV_MC3630_RETCODE_SUCCESS" is undefined
+      return(M_DRV_MC3630_RETCODE_SUCCESS);
+mcube\m_drv_mc3630.c(297): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s] WakeGain= 0x%02X", __func__, WakeGain);
+mcube\m_drv_mc3630.c(300): error:  #20: identifier "E_M_DRV_MC3630_WAKE_GAIN_END" is undefined
+      if (WakeGain > E_M_DRV_MC3630_WAKE_GAIN_END) {
+mcube\m_drv_mc3630.c(301): error:  #20: identifier "M_DRV_MC3630_RETCODE_ERROR_WRONG_ARGUMENT" is undefined
+          return(M_DRV_MC3630_RETCODE_ERROR_WRONG_ARGUMENT);
+mcube\m_drv_mc3630.c(304): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(304): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(304): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(305): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_DMX, _bRegAGain);
+mcube\m_drv_mc3630.c(308): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(308): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(308): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(312): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(312): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(312): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMY, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(313): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_DMY, _bRegAGain);
+mcube\m_drv_mc3630.c(316): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(316): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(316): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_DMX, &_bRegAGain, 1);
+mcube\m_drv_mc3630.c(317): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_DMX, _bRegAGain);
+mcube\m_drv_mc3630.c(319): error:  #20: identifier "M_DRV_MC3630_RETCODE_SUCCESS" is undefined
+      return(M_DRV_MC3630_RETCODE_SUCCESS);
+mcube\m_drv_mc3630.c(327): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(330): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x10, &_bRegData, 1);
+mcube\m_drv_mc3630.c(330): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x10, &_bRegData, 1);
+mcube\m_drv_mc3630.c(330): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x10, &_bRegData, 1);
+mcube\m_drv_mc3630.c(335): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x24, &_bRegData, 1);
+mcube\m_drv_mc3630.c(335): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x24, &_bRegData, 1);
+mcube\m_drv_mc3630.c(335): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x24, &_bRegData, 1);
+mcube\m_drv_mc3630.c(345): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x10, &_bRegData, 1);
+mcube\m_drv_mc3630.c(345): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x10, &_bRegData, 1);
+mcube\m_drv_mc3630.c(345): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x10, &_bRegData, 1);
+mcube\m_drv_mc3630.c(355): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(359): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x18, &_bRegData, 1);
+mcube\m_drv_mc3630.c(359): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x18, &_bRegData, 1);
+mcube\m_drv_mc3630.c(359): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x18, &_bRegData, 1);
+mcube\m_drv_mc3630.c(362): warning:  #223-D: function "I2C_Init" declared implicitly
+          
+M_DRV_MC3630_REG_READ(0x19, &_bRegData, 1);
+mcube\m_drv_mc3630.c(362): warning:  #223-D: function "I2C_ReadData" declared implicitly
+          
+M_DRV_MC3630_REG_READ(0x19, &_bRegData, 1);
+mcube\m_drv_mc3630.c(362): warning:  #223-D: function "I2C_Release" declared implicitly
+          
+M_DRV_MC3630_REG_READ(0x19, &_bRegData, 1);
+mcube\m_drv_mc3630.c(365): error:  #20: identifier "M_DRV_MC3630_RETCODE_SUCCESS" is undefined
+              return(M_DRV_MC3630_RETCODE_SUCCESS);
+mcube\m_drv_mc3630.c(369): error:  #20: identifier "M_DRV_MC3630_RETCODE_ERROR_IDENTIFICATION" is undefined
+      return(M_DRV_MC3630_RETCODE_ERROR_IDENTIFICATION);
+mcube\m_drv_mc3630.c(377): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(380): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x01, &_bRegData, 1);
+mcube\m_drv_mc3630.c(380): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x01, &_bRegData, 1);
+mcube\m_drv_mc3630.c(380): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x01, &_bRegData, 1);
+mcube\m_drv_mc3630.c(384): warning:  #223-D: function "I2C_Init" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(384): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(384): warning:  #223-D: function "I2C_Release" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(387): warning:  #223-D: function "I2C_Init" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(387): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(387): warning:  #223-D: function "I2C_Release" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(390): warning:  #223-D: function "I2C_Init" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(390): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(390): warning:  #223-D: function "I2C_Release" declared implicitly
+          
+M_DRV_MC3630_REG_WRITE(0x25, &_bRegData, 1);
+mcube\m_drv_mc3630.c(394): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x3B, &_bRegData, 1);
+mcube\m_drv_mc3630.c(394): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x3B, &_bRegData, 1);
+mcube\m_drv_mc3630.c(394): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x3B, &_bRegData, 1);
+mcube\m_drv_mc3630.c(396): error:  #20: identifier "E_M_DRV_MC3630_MODE_SNIFF" is undefined
+      if (mode == E_M_DRV_MC3630_MODE_SNIFF) {
+mcube\m_drv_mc3630.c(399): error:  #20: identifier "E_M_DRV_MC3630_MODE_PWAKE" is undefined
+      } else if (mode >= E_M_DRV_MC3630_MODE_PWAKE && mode < E_M_DRV_MC3630_MODE_END) {
+mcube\m_drv_mc3630.c(399): error:  #20: identifier "E_M_DRV_MC3630_MODE_END" is undefined
+      } else if (mode >= E_M_DRV_MC3630_MODE_PWAKE && mode < E_M_DRV_MC3630_MODE_END) {
+mcube\m_drv_mc3630.c(403): warning:  #223-D: function "Debug_Printf" declared implicitly
+          
+_PRINTF("[%s] Wrong mode", __func__);
+mcube\m_drv_mc3630.c(405): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x3B, &_bRegData, 1);
+mcube\m_drv_mc3630.c(405): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x3B, &_bRegData, 1);
+mcube\m_drv_mc3630.c(405): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x3B, &_bRegData, 1);
+mcube\m_drv_mc3630.c(414): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(420): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(420): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(420): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(424): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(424): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(424): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(425): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s] REG[0x1C] 0x%02X", __func__, _bRegData );
+mcube\m_drv_mc3630.c(428): error:  #20: identifier "E_M_DRV_MC3630_MODE_SNIFF" is undefined
+      _M_DRV_MC3630_SetOTPSampleRate(E_M_DRV_MC3630_MODE_SNIFF,s_bCfgSniffSRMode);
+mcube\m_drv_mc3630.c(436): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(442): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(442): warning:  #223-D: function "I2C_ReadData" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(442): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_READ(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(446): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(446): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(446): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(0x1C, &_bRegData, 1);
+mcube\m_drv_mc3630.c(447): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s] REG[0x1C] 0x%02X", __func__, _bRegData );
+mcube\m_drv_mc3630.c(450): error:  #20: identifier "E_M_DRV_MC3630_MODE_CWAKE" is undefined
+      _M_DRV_MC3630_SetOTPSampleRate(E_M_DRV_MC3630_MODE_CWAKE, s_bCfgWakeSRMode);
+mcube\m_drv_mc3630.c(456): error:  #20: identifier "E_M_DRV_MC3630_CWAKE_SR" is undefined
+  static void _M_DRV_MC3630_SetCwakeSampleRateUltraLowPowerMode(E_M_DRV_MC3630_CWAKE_SR eSR)
+mcube\m_drv_mc3630.c(458): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(462): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_WAKE_C, &_bRegWAKE, 1);
+mcube\m_drv_mc3630.c(462): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_WAKE_C, &_bRegWAKE, 1);
+mcube\m_drv_mc3630.c(462): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_WAKE_C, &_bRegWAKE, 1);
+mcube\m_drv_mc3630.c(463): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_WAKE_C, _bRegWAKE );
+mcube\m_drv_mc3630.c(469): error:  #20: identifier "E_M_DRV_MC3630_CWAKE_SR" is undefined
+  static void _M_DRV_MC3630_SetCwakeSampleRateLowPowerMode(E_M_DRV_MC3630_CWAKE_SR eSR)
+mcube\m_drv_mc3630.c(471): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug) 
+_PRINTF("[%s]", __func__);
+mcube\m_drv_mc3630.c(472): error:  #20: identifier "E_M_DRV_MC3630_CWAKE_SR_LP_DUMMY_BASE" is undefined
+      unsigned char _bRegWAKE = (eSR - E_M_DRV_MC3630_CWAKE_SR_LP_DUMMY_BASE);
+mcube\m_drv_mc3630.c(475): warning:  #223-D: function "I2C_Init" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_WAKE_C, &_bRegWAKE, 1);
+mcube\m_drv_mc3630.c(475): warning:  #223-D: function "I2C_WriteReg" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_WAKE_C, &_bRegWAKE, 1);
+mcube\m_drv_mc3630.c(475): warning:  #223-D: function "I2C_Release" declared implicitly
+      
+M_DRV_MC3630_REG_WRITE(M_DRV_MC3630_REG_WAKE_C, &_bRegWAKE, 1);
+mcube\m_drv_mc3630.c(476): warning:  #223-D: function "Debug_Printf" declared implicitly
+      if (s_debug)  
+_PRINTF("[%s] REG[0x%02X] 0x%02X", __func__, M_DRV_MC3630_REG_WAKE_C, _bRegWAKE );
+mcube\m_drv_mc3630.c(482): error:  #20: identifier "E_M_DRV_MC3630_CWAKE_SR" is undefined
+  static void _M_DRV_MC3630_SetCwakeSampleRateLowPrecisionMode(E_M_DRV_MC3630_CWAKE_SR eSR)
+mcube\m_drv_mc3630.c: 99 warnings, 30 errors
+compiling main.c...
+..\src\main.c(38): warning:  #223-D: function "M_DRV_MC3630_Init" declared implicitly
+  		M_DRV_MC3630_Init();
+..\src\main.c: 1 warning, 0 errors
+".\out\uart.axf" - 30 Error(s), 100 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Hao Hua\Documents\Projects\Dialog\DA1458x_SDK\5.0.4\projects\target_apps\peripheral_examples\mercury\Keil_5\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

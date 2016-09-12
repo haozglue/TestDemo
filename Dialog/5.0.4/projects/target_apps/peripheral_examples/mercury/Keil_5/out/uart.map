@@ -1,0 +1,111 @@
+Component: ARM Compiler 5.06 update 2 (build 183) Tool: armlink [4d35b7]
+
+==============================================================================
+
+Section Cross References
+
+    boot_vectors.o(RESET) refers to boot_vectors.o(STACK) for __initial_sp
+    boot_vectors.o(RESET) refers to boot_vectors.o(.text) for Reset_Handler
+    boot_vectors.o(RESET) refers to per_ex_hard_fault.o(.text) for HardFault_Handler
+    boot_vectors.o(RESET) refers to uart2.o(.text) for UART2_Handler
+    boot_vectors.o(RESET) refers to gpio.o(.text) for GPIO0_Handler
+    boot_vectors.o(.text) refers to system_armcm0.o(.text) for SystemInit
+    boot_vectors.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    gpio.o(.text) refers to gpio.o(.bss) for GPIOHandlerFunction
+    uart2.o(.text) refers to uart2.o(retention_mem_area0) for uart2_env
+    common_uart.o(.text) refers to uart2.o(.text) for uart2_write
+    common_uart.o(.text) refers to strlen.o(.text) for strlen
+    common_uart.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    main.o(.text) refers to common_uart.o(.text) for printf_string
+    main.o(.text) refers to user_periph_setup.o(.text) for periph_init
+    user_periph_setup.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    user_periph_setup.o(.text) refers to uart2.o(.text) for uart2_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to boot_vectors.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to boot_vectors.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing boot_vectors.o(HEAP), (256 bytes).
+    Removing system_armcm0.o(.rev16_text), (4 bytes).
+    Removing system_armcm0.o(.revsh_text), (4 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing uart2.o(.rev16_text), (4 bytes).
+    Removing uart2.o(.revsh_text), (4 bytes).
+    Removing common_uart.o(.rev16_text), (4 bytes).
+    Removing common_uart.o(.revsh_text), (4 bytes).
+    Removing user_periph_setup.o(.rev16_text), (4 bytes).
+    Removing user_periph_setup.o(.revsh_text), (4 bytes).
+    Removing m_drv_mc_utility.o(.constdata), (48 bytes).
+
+12 unused section(s) (total 344 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x20000000, Size: 0x00000d30, Max: 0x00009800, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x20000000, Size: 0x00000d30, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x000000a0   Data   RO            3    RESET               boot_vectors.o
+    0x200000a0   0x00000000   Code   RO          248  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x200000a0   0x00000004   Code   RO          255    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x200000a4   0x00000004   Code   RO          258    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x200000a8   0x00000000   Code   RO          260    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x200000a8   0x00000000   Code   RO          262    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x200000a8   0x00000008   Code   RO          263    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x200000b0   0x00000000   Code   RO          265    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x200000b0   0x00000000   Code   RO          267    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x200000b0   0x00000004   Code   RO          256    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x200000b4   0x0000001c   Code   RO            4    .text               boot_vectors.o
+    0x200000d0   0x0000005c   Code   RO           12    .text               system_armcm0.o
+    0x2000012c   0x00000004   Code   RO           59    .text               per_ex_hard_fault.o
+    0x20000130   0x000004b8   Code   RO           70    .text               gpio.o
+    0x200005e8   0x00000364   Code   RO          124    .text               uart2.o
+    0x2000094c   0x0000016c   Code   RO          164    .text               common_uart.o
+    0x20000ab8   0x00000154   Code   RO          194    .text               main.o
+    0x20000c0c   0x0000009c   Code   RO          215    .text               user_periph_setup.o
+    0x20000ca8   0x00000028   Code   RO          251    .text               mc_p.l(idiv.o)
+    0x20000cd0   0x0000000e   Code   RO          253    .text               mc_p.l(strlen.o)
+    0x20000cde   0x0000002c   Code   RO          269    .text               mc_p.l(uidiv.o)
+    0x20000d0a   0x00000002   PAD
+    0x20000d0c   0x00000024   Code   RO          271    .text               mc_p.l(init.o)
+    0x20000d30   0x00000000   Data   RO          273    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_IROM2 (Base: 0x20000d30, Size: 0x00000030, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000d30   0x00000014   Zero   RW           71    .bss                gpio.o
+    0x20000d44   0x0000001c   Zero   RW          125    retention_mem_area0  uart2.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20009600, Size: 0x00000200, Max: 0x00000200, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20009600   0x00000200   Zero   RW            1    STACK               boot_vectors.o
+
